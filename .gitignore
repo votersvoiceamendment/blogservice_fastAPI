@@ -1,6 +1,11 @@
 .venv
 
+.env
+
 # Ignore Python cache directories and compiled files
 __pycache__/
 *.py[cod]
 *.cpython-*
+
+# Help file
+HELP.md
