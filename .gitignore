@@ -1,5 +1,8 @@
-.venv
+# VS code
+.vscode
 
+# env stuff
+.venv
 .env
 
 # Ignore Python cache directories and compiled files
