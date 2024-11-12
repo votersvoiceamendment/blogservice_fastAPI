@@ -7,13 +7,13 @@ from comment import Comment
 
 class CommentCreate(BaseModel):
 	post_id: UUID
-	vva_user_id: str
 	text: str
 
 class Comment(CommentCreate):
 	id: UUID
+	vva_user_id: str
 	created_at: datetime
 	updated_at: datetime
 
 	class Config:
-		orm_mode = True
+		from_attributes = True
