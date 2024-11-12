@@ -4,13 +4,13 @@ from uuid import UUID
 from datetime import datetime
 
 
-class PostCreate(BaseModel):
+class PostBase(BaseModel):
 	title: str
 	text: str
 	featured: Optional[bool] = False
 
 
-class Post(PostCreate):
+class Post(PostBase):
 	id: UUID
 	vva_user_id: str
 	created_at: datetime

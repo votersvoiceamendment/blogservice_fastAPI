@@ -5,11 +5,11 @@ from uuid import UUID
 from datetime import datetime
 from comment import Comment
 
-class CommentCreate(BaseModel):
+class CommentBase(BaseModel):
 	post_id: UUID
 	text: str
 
-class Comment(CommentCreate):
+class Comment(CommentBase):
 	id: UUID
 	vva_user_id: str
 	created_at: datetime
