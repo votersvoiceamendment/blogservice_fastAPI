@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
 
+# DB models
+from models.post import Post
+from models.comment import Comment
+
 # Other routes
 from routers.posts import router as posts_router
 from routers.comments import router as comments_router
